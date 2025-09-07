@@ -508,19 +508,96 @@
                 </div>
             </div>
             
-            <!-- 专业介绍模块 -->
+            <!-- 专业介绍模块 - 主页面 -->
             <div id="professional" class="page">
-                <h2><i class="fas fa-book-open"></i> 专业介绍</h2>
-                <p>在这里你可以了解所学专业的详细信息：</p>
+                <h2><i class="fas fa-book-open"></i> 学术启航·专业全景导航</h2>
+                <p>深入了解专业设置、师资力量与就业前景：</p>
+                
+                <div class="subpage-grid">
+                    <div class="subpage-card" onclick="showModule('professional-overview')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="subpage-title">专业速览</h3>
+                        <p class="subpage-description">全面了解各专业设置、课程体系和学习路径，为你的学术生涯做好规划。</p>
+                    </div>
+                    
+                    <div class="subpage-card" onclick="showModule('faculty')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="subpage-title">师资队伍</h3>
+                        <p class="subpage-description">认识优秀的教授团队和学术导师，了解他们的研究方向和教学特色。</p>
+                    </div>
+                    
+                    <div class="subpage-card" onclick="showModule('employment')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="subpage-title">就业启蒙</h3>
+                        <p class="subpage-description">探索专业就业前景和职业发展路径，为未来职业生涯做好准备。</p>
+                    </div>
+                </div>
+                
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
+                </div>
+            </div>
+            
+            <!-- 专业速览子页面 -->
+            <div id="professional-overview" class="page">
+                <h2><i class="fas fa-globe"></i> 专业速览</h2>
+                <p>全面了解各专业设置与特色：</p>
                 
                 <ul class="links-list">
-                    <li><a href="https://join.fjut.edu.cn/2024/0714/c4175a237166/page.htm" target="_blank"><i class="fas fa-external-link-alt"></i> 计算机科学与技术专业介绍</a></li>
-                    <li><a href="https://join.fjut.edu.cn/2024/0715/c4175a237180/page.htm" target="_blank"><i class="fas fa-external-link-alt"></i> 软件工程介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 计算机科学与技术专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 软件工程专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 人工智能专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 数据科学与大数据技术专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 网络工程专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 物联网工程专业介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 信息安全专业介绍</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="showModule('professional')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+                </div>
+            </div>
+            
+            <!-- 师资队伍子页面 -->
+            <div id="faculty" class="page">
+                <h2><i class="fas fa-chalkboard-teacher"></i> 师资队伍</h2>
+                <p>认识优秀的教授团队和学术导师：</p>
+                
+                <ul class="links-list">
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 教授团队介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 副教授团队介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 博士生导师介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 硕士生导师介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 青年骨干教师介绍</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 客座教授与特聘专家</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 实验室与研究团队</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="showModule('professional')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+                </div>
+            </div>
+            
+            <!-- 就业启蒙子页面 -->
+            <div id="employment" class="page">
+                <h2><i class="fas fa-briefcase"></i> 就业启蒙</h2>
+                <p>探索专业就业前景和职业发展路径：</p>
+                
+                <ul class="links-list">
                     <li><a href="https://fjut.jysd.com/" target="_blank"><i class="fas fa-external-link-alt"></i> "苍霞启航"智慧就业网</a></li>
                 </ul>
                 
                 <div class="nav-buttons">
-                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
+                    <button class="nav-button" onclick="showModule('professional')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
                 </div>
             </div>
             
@@ -631,7 +708,7 @@
         </a>
         <a href="javascript:void(0)" class="mobile-nav-item" onclick="showModule('professional')">
             <div class="mobile-nav-icon"><i class="fas fa-book-open"></i></div>
-            <span>专业介绍</span>
+            <span>学术启航</span>
         </a>
         <a href="javascript:void(0)" class="mobile-nav-item" onclick="showModule('map')">
             <div class="mobile-nav-icon"><i class="fas fa-map-marked-alt"></i></div>
