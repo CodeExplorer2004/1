@@ -392,6 +392,95 @@
             display: none;
         }
         
+        /* 社团万象特定样式 */
+        .clubs-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 15px;
+        }
+        
+        .departments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .department-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+        }
+        
+        .department-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .department-link {
+            display: flex;
+            align-items: center;
+            padding: 20px 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            transition: background 0.3s ease;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .department-link:hover {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        }
+        
+        .department-link::after {
+            content: "\f138";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .department-link:hover::after {
+            transform: translateX(5px);
+        }
+        
+        .clubs-footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: white;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .clubs-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ffeb3b;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .clubs-btn:hover {
+            background: #ffc107;
+            transform: scale(1.05);
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -516,6 +605,26 @@
                 animation: fadeInOut 3s forwards;
             }
             
+            /* 社团万象移动端优化 */
+            .clubs-header {
+                padding: 15px;
+            }
+            
+            .department-link {
+                padding: 18px 20px;
+                font-size: 1.1rem;
+                justify-content: flex-start;
+            }
+            
+            .department-link::after {
+                position: static;
+                margin-left: 10px;
+            }
+            
+            .clubs-footer {
+                padding: 20px;
+            }
+            
             @keyframes fadeInOut {
                 0% { opacity: 0; }
                 20% { opacity: 1; }
@@ -560,6 +669,12 @@
             
             .subpage-description {
                 font-size: 0.9rem;
+            }
+            
+            /* 社团万象移动端优化 */
+            .department-link {
+                padding: 16px 18px;
+                font-size: 1rem;
             }
         }
         
@@ -910,14 +1025,74 @@
             
             <!-- 社团万象子页面 -->
             <div id="clubs" class="page">
-                <h2><i class="fas fa-users"></i> 社团万象</h2>
-                <p>丰富多彩的学生社团活动，等待你的加入：</p>
+                <div class="clubs-header">
+                    <h2><i class="fas fa-users"></i> 社团万象</h2>
+                    <p>探索各部门，找到适合你的舞台</p>
+                </div>
                 
-                <ul class="links-list">
-                    <li><a href="https://www.example.com/clubs" target="_blank"><i class="fas fa-list"></i> 学生社团总览</a></li>
-                    <li><a href="https://www.example.com/club-registration" target="_blank"><i class="fas fa-user-plus"></i> 社团招新报名</a></li>
-                    <li><a href="https://www.example.com/activities" target="_blank"><i class="fas fa-calendar-alt"></i> 近期社团活动</a></li>
-                </ul>
+                <div class="departments-list">
+                    <div class="department-item">
+                        <a href="#" class="department-link">组织部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">宣传部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">学习部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">社团管理部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="https://github.com/CodeExplorer2004/1/blob/images/%E4%BD%93%E8%82%B2%E9%83%A8.jpg" class="department-link">体育部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">宿管部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">外联部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">文娱部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">志工部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">技术部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">就创部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">红十字会</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">权益部</a>
+                    </div>
+                    
+                    <div class="department-item">
+                        <a href="#" class="department-link">办公室</a>
+                    </div>
+                </div>
+                
+                <div class="clubs-footer">
+                    <h2>快来加入我们</h2>
+                    <p>选择你感兴趣的部门，点击上方链接了解更多信息</p>
+                    <a href="#" class="clubs-btn">立即报名</a>
+                </div>
                 
                 <div class="nav-buttons">
                     <button class="nav-button" onclick="showModule('development')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
@@ -1068,4 +1243,3 @@
     </script>
 </body>
 </html>
-
