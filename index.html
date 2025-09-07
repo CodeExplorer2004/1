@@ -601,21 +601,153 @@
                 </div>
             </div>
             
-            <!-- 学校地图模块 -->
-            <div id="map" class="page">
-                <h2><i class="fas fa-map-marked-alt"></i> 学校地图</h2>
-                <p>校园导航与重要地点：</p>
-                
-                <ul class="links-list">
-                    <li><a href="https://www.720yun.com/t/f0vksmfws2b?scene_id=106585267"><i class="fas fa-external-link-alt"></i> 交互式校园地图</a></li>
-                    <li><a href="https://lib.fjut.edu.cn/main.htm"><i class="fas fa-external-link-alt"></i> 图书馆</a></li>
-                    <li><a href="https://join.fjut.edu.cn/gytp/list.htm"><i class="fas fa-external-link-alt"></i> 校园美景</a></li>
-                </ul>
-                
-                <div class="nav-buttons">
-                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
-                </div>
+            <!-- 学校地图模块 - 主页面 -->
+<div id="map" class="page">
+    <h2><i class="fas fa-map-marked-alt"></i> 校园生活·全能生活指南</h2>
+    <p>探索校园环境、生活服务与美食体验，获取实用生活信息：</p>
+    
+    <div class="subpage-grid">
+        <div class="subpage-card" onclick="showModule('campus-map')">
+            <div class="subpage-icon">
+                <i class="fas fa-map"></i>
             </div>
+            <h3 class="subpage-title">校园地图</h3>
+            <p class="subpage-description">探索校园布局，找到教学楼、图书馆、宿舍等重要场所的位置，快速熟悉校园环境。</p>
+        </div>
+        
+        <div class="subpage-card" onclick="showModule('express-stations')">
+            <div class="subpage-icon">
+                <i class="fas fa-box"></i>
+            </div>
+            <h3 class="subpage-title">快递站点</h3>
+            <p class="subpage-description">了解校园内快递收发点的位置和营业时间，方便收取和寄送包裹。</p>
+        </div>
+        
+        <div class="subpage-card" onclick="showModule('canteens')">
+            <div class="subpage-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <h3 class="subpage-title">美味食堂</h3>
+            <p class="subpage-description">发现校园内的美食天堂，了解各食堂特色菜品和营业时间，满足你的味蕾需求。</p>
+        </div>
+        
+        <div class="subpage-card" onclick="showModule('tips')">
+            <div class="subpage-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="subpage-title">温馨提示</h3>
+            <p class="subpage-description">获取校园生活实用小贴士，帮助你更快适应大学生活，享受便利的校园服务。</p>
+        </div>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
+    </div>
+</div>
+
+<!-- 校园地图子页面 -->
+<div id="campus-map" class="page">
+    <h2><i class="fas fa-map"></i> 校园地图</h2>
+    <p>探索校园布局，快速找到重要场所：</p>
+    
+    <ul class="links-list">
+        <li><a href="https://www.720yun.com/t/f0vksmfws2b?scene_id=106585267" target="_blank"><i class="fas fa-external-link-alt"></i> 交互式校园全景地图</a></li>
+    </ul>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="showModule('map')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+        <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+    </div>
+</div>
+
+<!-- 快递站点子页面 -->
+<div id="express-stations" class="page">
+    <h2><i class="fas fa-box"></i> 快递站点</h2>
+    <p>校园内快递收发服务信息：</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="https://via.placeholder.com/300x200?text=快递站点示意图" alt="校园快递站点分布图" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">校园快递服务中心分布示意图</p>
+    </div>
+    
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+        <h3 style="color: #4a00e0; margin-bottom: 15px;"><i class="fas fa-info-circle"></i> 快递服务指南</h3>
+        <p style="line-height: 1.6; color: #555;">
+            福工快递超市（校外、超过48小时未取快递收取滞留费）：中通快递、京东
+            妈妈驿站（校外）：圆通快递
+            菜鸟驿站（校内）：申通快递、韵达快递、极兔速递、顺丰速运
+            邮政快递（校内）：邮政快递
+
+        </p>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="showModule('map')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+        <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+    </div>
+</div>
+
+<!-- 美味食堂子页面 -->
+<div id="canteens" class="page">
+    <h2><i class="fas fa-utensils"></i> 美味食堂</h2>
+    <p>探索校园美食，满足味蕾需求：</p>
+    
+    <ul class="links-list">
+        <li><a href="https://mp.weixin.qq.com/s/FzhvkJfoTnAU5UKUWr8GnQ）" target="_blank"><i class="fas fa-external-link-alt"></i> 美味食堂</a></li>
+    </ul>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="showModule('map')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+        <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+    </div>
+</div>
+
+<!-- 温馨提示子页面 -->
+<div id="tips" class="page">
+    <h2><i class="fas fa-lightbulb"></i> 温馨提示</h2>
+    <p>校园生活实用信息与小贴士：</p>
+    
+    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 20px 0;">
+        <h3 style="color: #4a00e0; margin-bottom: 20px; text-align: center;"><i class="fas fa-hands-helping"></i> 新生校园生活指南</h3>
+        
+        <div style="line-height: 1.8; color: #444;">
+            <p>亲爱的2025级新生：
+首先，热烈欢迎你们踏入充满活力与希望的校园，正式加入计算科学与数学学院这个温馨且富有创造力的大家庭！为帮助大家平安、顺畅地融入新环境，现就开学事宜做以下几点温馨提醒：
+</p>
+            
+            <p><strong>1.妥善携带保管个人财物：</strong>录取通知书、身份证、银行卡、户口本、学籍档案等重要证件务必随身携带，切勿随意放置，防止丢失或被盗。</p>
+            
+            <p><strong>2.谨防网络诈骗风险：</strong>不随意添加陌生人为好友，不随意向他人转账，不随意扫描未知二维码。有关学校的内容信息，请认准官方渠道完成。 </p>
+            
+            <p><strong>3.远离“兼职/贷款”陷阱：</strong>坚决抵制“校园贷”“培训贷”等行为，对“兼职刷单”“中奖返利”“冒充学长学姐兜售物品”等常见诈骗手段保持高度警觉。</p>
+            
+            <p><strong>4.谨防物资采购陷阱：</strong>拒绝校园及宿舍楼内各类推销，如学习资料、培训等，对于那些流动宣传、四处兜售的人员，切勿予以理会。
+</p>
+            
+            <p><strong>5.出行安全：</strong>入学途中选择正规交通工具，遵守交通规则。乘坐公共交通时保管好个人物品，防范扒手。自驾到校要提前规划路线，留意交通状况，保障自身安全。
+</p>
+
+            p><strong>6.警惕冒充人员：</strong>注意防范冒充学校老师、辅导员、工作人员等身份的诈骗行为，涉及缴费、提供个人信息等要求时，务必通过官方渠道核实对方身份。</p>
+
+            p><strong>7.心理调适：</strong>面对新环境可能产生的压力和不适应，可以及时与助导或者辅导员进行交流，保持积极心态。 
+8.良好的社交：在宿舍生活里，要尊重他人观点和习惯，以平和心态沟通，避免不必要冲突，主动与舍友和同学交流，营造和谐人际关系。
+</p>
+
+            p><strong>8.良好的社交：</strong>在宿舍生活里，要尊重他人观点和习惯，以平和心态沟通，避免不必要冲突，主动与舍友和同学交流，营造和谐人际关系。
+</p>
+
+            p><strong>9.及时修改收货地址：</strong>在入学前，记得将常用的快递收货地址更新为学校的准确地址，避免因地址未及时修改导致快递无法正常接收或被他人冒领。同时，取件时注意核实身份信息，确保个人物品安全。
+</p>
+            
+            <p>祝愿每一位新同学都能在计算机科学与数学学院拥有一段平安、充实、难忘的大学时光！</p>
+        </div>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="showModule('map')"><i class="fas fa-arrow-left"></i> 返回上一级</button>
+        <button class="nav-button" onclick="showWelcome()"><i class="fas fa-home"></i> 返回首页</button>
+    </div>
+</div>
             
             <!-- 信息门户模块 -->
             <div id="repair" class="page">
@@ -782,4 +914,5 @@
     </script>
 </body>
 </html>
+
 
