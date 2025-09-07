@@ -419,9 +419,9 @@
                            
                         </div>
                         
-                        <div class="module-card" onclick="showModule('map')">
+                        <div class="module-card" onclick="showModule('development')">
                             <div class="module-icon">
-                                <i class="fas fa-map-marked-alt"></i>
+                                <i class="fas fa-rocket"></i>
                             </div>
                             <h3 class="module-title">成长发展·潜能无限启航</h3>
                  
@@ -481,6 +481,30 @@
                     <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
                 </div>
             </div>
+            
+            <!-- 成长发展模块 - 新增 -->
+            <div id="development" class="page">
+                <h2><i class="fas fa-rocket"></i> 成长发展</h2>
+                <p>探索社团活动与校园服务，开启多彩大学生活：</p>
+                
+                <h3 style="margin-top: 20px; color: #4a00e0;"><i class="fas fa-users"></i> 社团万象</h3>
+                <ul class="links-list">
+                    <li><a href="https://www.example.com/clubs" target="_blank"><i class="fas fa-external-link-alt"></i> 学生社团总览</a></li>
+                    <li><a href="https://www.example.com/club-registration" target="_blank"><i class="fas fa-external-link-alt"></i> 社团招新报名</a></li>
+                    <li><a href="https://www.example.com/activities" target="_blank"><i class="fas fa-external-link-alt"></i> 近期社团活动</a></li>
+                </ul>
+                
+                <h3 style="margin-top: 20px; color: #4a00e0;"><i class="fas fa-info-circle"></i> 信息门户</h3>
+                <ul class="links-list">
+                    <li><a href="https://www.example.com/student-services" target="_blank"><i class="fas fa-external-link-alt"></i> 学生服务中心</a></li>
+                    <li><a href="https://www.example.com/campus-news" target="_blank"><i class="fas fa-external-link-alt"></i> 校园新闻动态</a></li>
+                    <li><a href="https://www.example.com/career-guidance" target="_blank"><i class="fas fa-external-link-alt"></i> 职业发展指导</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -501,6 +525,10 @@
         <a href="javascript:void(0)" class="mobile-nav-item" onclick="showModule('repair')">
             <div class="mobile-nav-icon"><i class="fas fa-tools"></i></div>
             <span>信息门户</span>
+        </a>
+        <a href="javascript:void(0)" class="mobile-nav-item" onclick="showModule('development')">
+            <div class="mobile-nav-icon"><i class="fas fa-rocket"></i></div>
+            <span>成长发展</span>
         </a>
     </nav>
     
@@ -562,4 +590,3 @@
     </script>
 </body>
 </html>
-
