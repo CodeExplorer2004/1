@@ -976,19 +976,44 @@
                 </div>
             </div>
             
-            <!-- 信息门户模块 -->
-            <div id="repair" class="page">
-                <h2><i class="fas fa-tools"></i> 信息门户</h2>
-                <p>多样化的平台功能：</p>
+            <!-- 图书馆服务模块 - 主页面 -->
+            <div id="library" class="page">
+                <h2><i class="fas fa-book"></i> 学习资源·宝藏资源工具</h2>
+                <p>探索图书馆资源与服务，助力你的学习之旅：</p>
                 
-                <ul class="links-list">
-                    <li><a href="https://scpt-443.webvpn.fjut.edu.cn/#/allComponent?lightIndex=0&plateId=634848110215958528"><i class="fas fa-external-link-alt"></i> 三创平台</a></li>
-                    <li><a href="https://jwxt-443.webvpn.fjut.edu.cn/jwglxt/xtgl/login_slogin.html"><i class="fas fa-external-link-alt"></i> 教务管理系统</a></li>
-                    <li><a href="https://ehall-443.webvpn.fjut.edu.cn/new/index.html?browser=no"><i class="fas fa-external-link-alt"></i> 办事大厅</a></li>
-                    <li><a href="https://selfservice-8080.webvpn.fjut.edu.cn/selfservice/"><i class="fas fa-external-link-alt"></i> 校园网自助服务系统</a></li>
-                    <li><a href="https://www-cnki-net-443.webvpn.fjut.edu.cn/"><i class="fas fa-external-link-alt"></i> 中国知网</a></li>
-                    <li><a href="https://www.kdocs.cn/l/cefUcWhsViMZ"></i> 校内快递站分布图</a></li>
-                </ul>
+                <div class="subpage-grid">
+                    <div class="subpage-card" onclick="showModule('library-intro')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3 class="subpage-title">本馆简介</h3>
+                        <p class="subpage-description">了解图书馆的历史、馆藏特色和学科信息服务理念，更好地利用图书馆资源。</p>
+                    </div>
+                    
+                    <div class="subpage-card" onclick="showModule('library-hours')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="subpage-title">开放时间</h3>
+                        <p class="subpage-description">查看图书馆各区域的开放时间，合理安排你的学习和阅读计划。</p>
+                    </div>
+                    
+                    <div class="subpage-card" onclick="showModule('library-borrow')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="subpage-title">图书借还</h3>
+                        <p class="subpage-description">了解图书借阅规则、续借方法和归还流程等，轻松借阅所需图书。</p>
+                    </div>
+                    
+                    <div class="subpage-card" onclick="showModule('library-seat')">
+                        <div class="subpage-icon">
+                            <i class="fas fa-chair"></i>
+                        </极速div>
+                        <h3 class="subpage-title">座位预约</h3>
+                        <p class="subpage-description">了解座位预约，确保学习空间，提高学习效率。</p>
+                    </div>
+                </div>
                 
                 <div class="nav-buttons">
                     <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
@@ -1117,7 +1142,6 @@
                 <div class="nav-buttons">
                     <button class="nav-button" onclick="showWelcome()"><i class="fas fa-arrow-left"></i> 返回首页</button>
                 </div>
-            </div>
         </div>
     </div>
     
@@ -1245,5 +1269,6 @@
     </script>
 </body>
 </html>
+
 
 
